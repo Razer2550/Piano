@@ -1,17 +1,34 @@
 .container {
     background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
+/* Header */
+.info_text {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.18em;
+    font-size: 50px;
+}
+
+/* Subhead */
 .hint_text {
+    font-size: 24px;
+    margin: 0 0 30px;
     font-style: italic;
     color: white;
     text-align: center;
 }
 
-.info_text {
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    letter-spacing: 0.2em;
-    font-size: 30px;
+/* Style for keynotes that appear on the keys */
+.nowplaying {
+    font-size: 120px;
+    line-height: 1;
+    color: #eee;
+    text-shadow: 0 0 5rem #028ae9;
+    transition: all .07s ease;
+    min-height: 120px;
 }
