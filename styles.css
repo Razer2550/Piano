@@ -2,13 +2,13 @@
     background-color: black;
 }
 
-.hint {
+.hint_text {
     font-style: italic;
     color: white;
     text-align: center;
 }
 
-.info {
+.info_text {
     font-weight: bold;
     text-align: center;
     color: white;
