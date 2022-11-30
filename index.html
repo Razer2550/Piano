@@ -1,95 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIANO</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Piano</title>
+  <link rel="stylesheet" href="styles.css">
+
 </head>
-<body class="container">
-    <h1 class="info_text">ПИАНИНО НА JAVASCRIPT</h1>
-    <h2 class="hint_text">Используйте клавиатуру, наведите курсор для подсказок</h2>
-    
+<body>
+<body>
+  <section>
+
+    <h1>Piano on JavaScript</h1>
+    <h2>Use keyboards, hover to show hints</h2>
     <section>
-        <div class="nowplaying"></div>
-        <div class="keys">
-            <div data-key="65" class="key" data-note="C">
-                <span class="hints">A</span>
-            </div>
-            <div data-key="87" class="key" data-note="C#">
-                <span class="hints">W</span>
-            </div>
-            <div data-key="83" class="key sharp" data-note="C#">
-                <span class="hints">S</span>
-            </div>
-            <div data-key="69" class="key" data-note="D">
-                <span class="hints">E</span>
-            </div>
-            <div data-key="68" class="key sharp" data-note="D#">
-                <span class="hints">D</span>
-            </div>
-            <div data-key="70" class="key" data-note="E">
-                <span class="hints">F</span>
-            </div>
-            <div data-key="84" class="key" data-note="F">
-                <span class="hints">T</span>
-            </div>
-            <div data-key="71" class="key sharp" data-note="F#">
-                <span class="hints">G</span>
-            </div>
-            <div data-key="71" class="key" data-note="G">
-                <span class="hints">Y</span>
-            </div>
-            <div data-key="89" class="key sharp" data-note="G#">
-                <span class="hints">H</span>
-            </div>
-            <div data-key="72" class="key" data-note="A">
-                <span class="hints">U</span>
-            </div>
-            <div data-key="85" class="key sharp" data-note="A#">
-                <span class="hints">U</span>
-            </div>
-            <div data-key="74" class="key" data-note="B">
-                <span class="hints">J</span>
-            </div>
-            <div data-key="75" class="key" data-note="C">
-                <span class="hints">K</span>
-            </div>
-            <div data-key="79" class="key sharp" data-note="C#">
-                <span class="hints">O</span>
-            </div>
-            <div data-key="76" class="key" data-note="D">
-                <span class="hints">L</span>
-            </div>
-            <div data-key="80" class="key sharp" data-note="D#">
-                <span class="hints">P</span>
-            </div>
-            <div data-key="186" class="key" data-note="E">
-                <span class="hints">;</span>
-            </div>
+      <div class="nowplaying"></div>
+
+      <div class="keys">
+        <div data-key="65" class="key" data-note="C">
+            <span class="hints">A</span>
         </div>
+        <div data-key="87" class="key sharp" data-note="C#">
+            <span class="hints">W</span>
+        </div>
+        <div data-key="83" class="key" data-note="D">
+            <span class="hints">S</span>
+        </div>
+        <div data-key="69" class="key sharp" data-note="D#">
+            <span class="hints">E</span>
+        </div>
+        <div data-key="68" class="key" data-note="E">
+            <span class="hints">D</span>
+        </div>
+        <div data-key="70" class="key" data-note="F">
+            <span class="hints">F</span>
+        </div>
+        <div data-key="84" class="key sharp" data-note="F#">
+            <span class="hints">T</span>
+        </div>
+        <div data-key="71" class="key" data-note="G">
+            <span class="hints">G</span>
+        </div>
+        <div data-key="89" class="key sharp" data-note="G#">
+            <span class="hints">Y</span>
+        </div>
+        <div data-key="72" class="key" data-note="A">
+            <span class="hints">H</span>
+        </div>
+        <div data-key="85" class="key sharp" data-note="A#">
+            <span class="hints">U</span>
+        </div>
+        <div data-key="74" class="key" data-note="B">
+            <span class="hints">J</span>
+        </div>
+        <div data-key="75" class="key" data-note="C">
+            <span class="hints">K</span>
+        </div>
+        <div data-key="79" class="key sharp" data-note="C#">
+            <span class="hints">O</span>
+        </div>
+        <div data-key="76" class="key" data-note="D">
+            <span class="hints">L</span>
+        </div>
+        <div data-key="80" class="key sharp" data-note="D#">
+            <span class="hints">P</span>
+        </div>
+        <div data-key="186" class="key" data-note="E">
+            <span class="hints">;</span>
+        </div>
+      </div>
 
-        <audio data-key="65" src="sounds/040.wav"></audio>
-        <audio data-key="87" src="sounds/041.wav"></audio>
-        <audio data-key="83" src="sounds/042.wav"></audio>
-        <audio data-key="69" src="sounds/043.wav"></audio>
-        <audio data-key="68" src="sounds/044.wav"></audio>
-        <audio data-key="70" src="sounds/045.wav"></audio>
-        <audio data-key="84" src="sounds/046.wav"></audio>
-        <audio data-key="71" src="sounds/047.wav"></audio>
-        <audio data-key="89" src="sounds/048.wav"></audio>
-        <audio data-key="72" src="sounds/049.wav"></audio>
-        <audio data-key="85" src="sounds/050.wav"></audio>
-        <audio data-key="74" src="sounds/051.wav"></audio>
-        <audio data-key="75" src="sounds/052.wav"></audio>
-        <audio data-key="79" src="sounds/053.wav"></audio>
-        <audio data-key="76" src="sounds/054.wav"></audio>
-        <audio data-key="80" src="sounds/055.wav"></audio>
-        <audio data-key="186" src="sounds/056.wav"></audio>
-    </section>
+      <audio data-key="65" src="sounds/040.wav"></audio>
+      <audio data-key="87" src="sounds/041.wav"></audio>
+      <audio data-key="83" src="sounds/042.wav"></audio>
+      <audio data-key="69" src="sounds/043.wav"></audio>
+      <audio data-key="68" src="sounds/044.wav"></audio>
+      <audio data-key="70" src="sounds/045.wav"></audio>
+      <audio data-key="84" src="sounds/046.wav"></audio>
+      <audio data-key="71" src="sounds/047.wav"></audio>
+      <audio data-key="89" src="sounds/048.wav"></audio>
+      <audio data-key="72" src="sounds/049.wav"></audio>
+      <audio data-key="85" src="sounds/050.wav"></audio>
+      <audio data-key="74" src="sounds/051.wav"></audio>
+      <audio data-key="75" src="sounds/052.wav"></audio>
+      <audio data-key="79" src="sounds/053.wav"></audio>
+      <audio data-key="76" src="sounds/054.wav"></audio>
+      <audio data-key="80" src="sounds/055.wav"></audio>
+      <audio data-key="186" src="sounds/056.wav"></audio>
+      </section>
+  </section>
+  
+  </body>
 
-    
-    <script src="scripts.js"></script>
+  <script  src="scripts.js"></script>
+
 </body>
 </html>
