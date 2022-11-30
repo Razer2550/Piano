@@ -1,3 +1,17 @@
 .container {
     background-color: black;
 }
+
+.hint {
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+.info {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.2em;
+    font-size: 30px;
+}
